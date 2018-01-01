@@ -1,7 +1,7 @@
 var connections = [];
 var express = require('express');
 var app = express();
-var server = app.listen(3000);
+var server = app.listen(process.env.POST || 3000);
 app.use(express.static('public'));
 
 console.log('Server Start');
